@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{65421E40-3A5F-47C1-A48B-CCFB1DBF20A0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Cycling_Tracker.My.MyApplication</StartupObject>
+    <RootNamespace>Cycling_Tracker</RootNamespace>
+    <AssemblyName>Cycling Tracker</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Cycling Tracker.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Cycling Tracker.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminSearch.Designer.vb">
+      <DependentUpon>AdminSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CharityInformation.Designer.vb">
+      <DependentUpon>CharityInformation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CharityInformation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Equipment.Designer.vb">
+      <DependentUpon>Equipment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Equipment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputCharity.Designer.vb">
+      <DependentUpon>InputCharity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InputCharity.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputCycling.Designer.vb">
+      <DependentUpon>InputCycling.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InputCycling.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputPersonal.Designer.vb">
+      <DependentUpon>InputPersonal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InputPersonal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KnownSearch.Designer.vb">
+      <DependentUpon>KnownSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KnownSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Leaderboard.Designer.vb">
+      <DependentUpon>Leaderboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Leaderboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Module1.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OpenScreen.Designer.vb">
+      <DependentUpon>OpenScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OpenScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paracyclist.Designer.vb">
+      <DependentUpon>Paracyclist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Paracyclist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonalTrainer.Designer.vb">
+      <DependentUpon>PersonalTrainer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalTrainer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchMenu.Designer.vb">
+      <DependentUpon>SearchMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suggestions.Designer.vb">
+      <DependentUpon>Suggestions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Suggestions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tracking.Designer.vb">
+      <DependentUpon>Tracking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tracking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Training.Designer.vb">
+      <DependentUpon>Training.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Training.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePass.Designer.vb">
+      <DependentUpon>UpdatePass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePersonal.Designer.vb">
+      <DependentUpon>UpdatePersonal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePersonal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSearch.Designer.vb">
+      <DependentUpon>UserSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdminSearch.resx">
+      <DependentUpon>AdminSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CharityInformation.resx">
+      <DependentUpon>CharityInformation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Equipment.resx">
+      <DependentUpon>Equipment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputCharity.resx">
+      <DependentUpon>InputCharity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputCycling.resx">
+      <DependentUpon>InputCycling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputPersonal.resx">
+      <DependentUpon>InputPersonal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KnownSearch.resx">
+      <DependentUpon>KnownSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Leaderboard.resx">
+      <DependentUpon>Leaderboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenScreen.resx">
+      <DependentUpon>OpenScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paracyclist.resx">
+      <DependentUpon>Paracyclist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonalTrainer.resx">
+      <DependentUpon>PersonalTrainer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchMenu.resx">
+      <DependentUpon>SearchMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suggestions.resx">
+      <DependentUpon>Suggestions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tracking.resx">
+      <DependentUpon>Tracking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Training.resx">
+      <DependentUpon>Training.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePass.resx">
+      <DependentUpon>UpdatePass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePersonal.resx">
+      <DependentUpon>UpdatePersonal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSearch.resx">
+      <DependentUpon>UserSearch.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Charity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CharityStats.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cycling Data.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Equipment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leaderboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Personal Trainer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PersonalDetails.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sign Out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tracking 11.48.48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Trainer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calories.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Distance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Speed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Time.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Speed2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Complete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search Known.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search Other.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SearchMe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bike.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clothing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maintainence.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
